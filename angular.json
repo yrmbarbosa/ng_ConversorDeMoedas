@@ -119,6 +119,10 @@
           }
         }
       }
-    }},
-  "defaultProject": "conversor-de-moedas"
+    }
+  },
+  "defaultProject": "conversor-de-moedas",
+  "cli": {
+    "analytics": "221eb6bd-c451-4e82-ae6e-a17e550e4dc3"
+  }
 }
