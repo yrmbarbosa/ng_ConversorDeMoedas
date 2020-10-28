@@ -26,9 +26,11 @@
 				</option>
 			</select>
 
-			<input type="submit" value="Converter" class="btn btn-success" data-toogle="modal"
+			<input type="submit" value="Converter" class="btn btn-success" data-toggle="modal"
 				data-target="#modalCotacao" (click)="converter()" [disabled]="!conversaoForm.form.valid">
 
 		</form>
 	</div>
+	<modal-cotacao [id]="'modalCotacao'" [conversaoResponse]="conversaoResponse" [conversao]="conversao" (onConfirm)="iniciar()">
+	</modal-cotacao>
 </div>

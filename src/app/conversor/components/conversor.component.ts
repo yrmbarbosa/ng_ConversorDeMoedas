@@ -39,10 +39,7 @@ export class ConversorComponent implements OnInit {
 
   converter(): void {
 
-
-
-    if (this.conversaoForm.valid) {
-      //alert("Convertendo: " + JSON.stringify(this.conversao));
+    if (this.conversaoForm.valid) {      
 
       this.conversorService
       .converter(this.conversao)
@@ -53,9 +50,6 @@ export class ConversorComponent implements OnInit {
         },         
         error => this.possuiErro = true
       );
-
-      console.log(this.possuiErro);
-      console.log(this.conversaoResponse);
 
     }
   }
